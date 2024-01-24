@@ -1,26 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Scada");
 
-@media screen {
-  main {
-    grid-template-columns: 1fr;
-  }
-}
 
-@media screen and (min-width: 1000px) {
-  main {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (min-width: 1500px) {
-  main {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-main {
+main {  
   width: 90%;
   display: grid;
+  grid-template-columns: 1fr;
   margin: 0% auto;
   grid-gap: 1rem;
   grid-auto-rows: max-content;
