@@ -33,10 +33,33 @@ ul {
   vertical-align: middle;
 }
 
-nav {
-  display: inline-block;
+#hamburger {
+	font-size: 3rem;
+	border: 0px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: lightslategray;
+	color: white;
+ 	position: absolute;
+	top: 143px;
+	left: 1px;
+}
+
+#hamburger::before {
+	content: "☰";
+}
+
+#hamburger.show::before {
+	content: "❌";
+}
+
+.navigation {
+  display: none;
   background-color: black;
   width: 100%;
+}
+
+.show {
+  display: inline-block;
 }
 
 .navlink {
@@ -68,6 +91,28 @@ main {
 
 li {
   list-style: none;
+}
+
+.card:first-of-type ul li:nth-child(odd) {
+  a {
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.card:first-of-type ul li:nth-child(even) {
+  list-style: circle;
+  list-style-position: inside;
+  a {
+    color: navy;
+  }
+}
+
+iframe {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 footer {
