@@ -93,20 +93,19 @@ li {
   list-style: none;
 }
 
-.card:first-of-type ul li:nth-child(odd) {
-  a {
+.card:first-of-type ul li:nth-child(odd) a {
     color: black;
     font-weight: bold;
   }
-}
 
-.card:first-of-type ul li:nth-child(even) {
-  list-style: circle;
-  list-style-position: inside;
-  a {
+.card:first-of-type ul li:nth-child(even) a {
     color: navy;
   }
-}
+
+.card:first-of-type ul li:nth-child(even) {
+    list-style: circle;
+    list-style-position: inside;
+  }
 
 iframe {
   border: 1px solid lightgrey;
