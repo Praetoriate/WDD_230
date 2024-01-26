@@ -69,6 +69,10 @@ ul {
   text-decoration: none;
 }
 
+.navlink:hover {
+  color:  gold;
+}
+
 main {
   width: 90%;
   margin: 0 auto;
