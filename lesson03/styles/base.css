@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&family=Cormorant+Garamond");
+
+
+body {
+    margin-left: 10px;
+    background-color: #FAFBFC;
+}
+
+header {
+    border-bottom: 4px solid #ef4062;
+    background-color: #878378;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Staatliches";
+    color: #383639;
+}
+
+p {
+    font-family: "Cormorant Garamond";
+    color: black;
+    font-weight: bold;
+}
+
+
+section h2 {
+    background-color: #6B9DDA;
+}
