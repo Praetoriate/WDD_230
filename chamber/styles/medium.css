@@ -1,0 +1,29 @@
+@media screen and (min-width: 800px) {
+
+    /* Header */
+
+    .social {
+        padding-right: 30px;
+    }
+
+    /* Nav */
+    #hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navigation a {
+        padding: 1rem;
+        text-decoration: none;
+        color: #FAFBFC;
+        flex: 1;
+    }
+
+
+
+}

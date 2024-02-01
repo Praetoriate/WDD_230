@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Communtity of Glenn Chamber of Commerce</title>
+    <title>Community of Glenn Chamber of Commerce</title>
     <meta name="author" content="Beau Travis">
     <meta name="description"
         content="Mock chamber of commerce website for the community of Glenn, CA | WDD 230 - Web Frontend Development">
@@ -22,17 +22,32 @@
 
 <body>
     <header>
-        <img src="favicon.ico" alt="Glenn Logo">
-        <h1>Communtity of Glenn Chamber of Commerce</h1>
-        <h3>555-123-4567<br>glennchamber@fake.net</h3>
+        <div class="logo_group">
+            <img src="favicon.ico" alt="Glenn Logo">
+            <h1>Community of Glenn Chamber of Commerce</h1>
+        </div>
+        <div class="header_junk">
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/x.png" alt="X (aka:Twitter) icon">
+                </a>
+            </div>
+            <button id="hamburger"></button>
+        </div>
     </header>
-    <button id="hamburger"></button>
     <nav class="navigation">
-        <ul>
-            <li><a class="navlink" href="#">Discover Glenn</a></li>
-            <li><a class="navlink" href="#">Becoming A Member</a></li>
-            <li><a class="navlink" href="#">Member Direcory</a></li>
-        </ul>
+        <a class="navlink" href="#">Discover Glenn</a>
+        <a class="navlink" href="#">Becoming A Member</a>
+        <a class="navlink" href="#">Member Directory</a>
     </nav>
     <main>
         <div id="hero">
@@ -67,11 +82,15 @@
 
     </main>
     <footer>
-        <p>555-123-4567 | glennchamber@fake.net<br>Beau Travis<br>This is a
-            fictitious
-            page for BYU-I WDD 230 | &copy;<span id="year"></span></p>
-        <p>Last Modified:</p>
-        <p id="lastModified">last changed date</p>
+        <div>
+            <img src="favicon.ico" alt="Glenn Logo">
+            <p>(555)123-4567 | glennchamber@fake.net<br>Beau Travis - CA, USA</p>
+        </div>
+        <div>
+            <p>Last Modified: - </p>
+            <p id="lastModified">last changed date</p>
+        </div>
+        <p>This is a fictitious page for BYU-I WDD 230 | &copy;<span id="year"></span></p>
     </footer>
     <script src="scripts/getdates.js"></script>
 </body>

@@ -12,7 +12,7 @@ header {
   width: 100%;
 }
 
-header>img {
+header img {
   height: 150px;
   border-radius: 25%;
   margin-block: 30px;

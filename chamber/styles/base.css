@@ -1,1 +1,192 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&family=Cormorant+Garamond");
+
+/* Global Formatting */
+body {
+    background-color: #FAFBFC;
+}
+
+main {
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Staatliches";
+    color: #383639;
+}
+
+p,
+a {
+    font-family: "Cormorant Garamond";
+    color: black;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    background-color: #878378;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 100%;
+}
+
+header {
+    border-bottom: 4px solid #ef4062;
+}
+
+.logo_group {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+
+}
+
+.header_junk {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header>div>img {
+    height: 100px;
+    border-radius: 10%;
+    margin-block: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+header div a img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social a:nth-child(-n + 2) {
+    align-self: end;
+}
+
+.social a:nth-last-child(-n +2) {
+    align-self: flex-start;
+}
+
+/* Nav */
+#hamburger {
+    font-size: 4rem;
+    border: 0px solid black;
+    padding: 0px 10px 0px 30px;
+    background-color: #878378;
+    color: #383639;
+    align-self: flex-end;
+}
+
+#hamburger::before {
+    content: "☰";
+}
+
+#hamburger.show::before {
+    content: "X";
+    padding: 0px 0px 0px 11.25px;
+    color: #ef4062;
+}
+
+.navigation {
+    display: none;
+    background-color: #383639;
+    width: 100%;
+}
+
+.navigation a:hover {
+    color: #6B9DDA;
+}
+
+.show {
+    display: inline-block;
+}
+
+.navlink {
+    border: 1px solid #878378;
+    display: block;
+    text-align: center;
+    color: #FAFBFC;
+    font-size: 24px;
+    font-variant: small-caps;
+    text-decoration: none;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+/* Hero */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#hero-img {
+    width: 100%;
+    opacity: .75;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-button {
+    background-color: #FAFBFC;
+    padding: 1rem;
+    font-family: "Staatliches";
+    border: 2px solid #383639;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-bottom: 100%;
+}
+
+#hero-button a {
+    font-family: "Staatliches";
+    font-size: x-large;
+    text-decoration: none;
+    color: #383639;
+}
+
+#hero-button:hover {
+    background-color: #6B9DDA;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #878378;
+    display: grid;
+    grid-template-rows: auto;
+    text-align: center;
+    width: 100%;
+}
+
+footer div:first-child {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+footer div img {
+    height: 50px;
+    border-radius: 10%;
+    margin-block: 10px;
+    margin-right: 10px;
+}
