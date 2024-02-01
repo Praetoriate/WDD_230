@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communtity of Glenn Chamber of Commerce</title>
+    <meta name="author" content="Beau Travis">
+    <meta name="description"
+        content="Mock chamber of commerce website for the community of Glenn, CA | WDD 230 - Web Frontend Development">
+    <meta property="og:title" content="Beau Travis - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://praetoriate.github.io/wdd230/chamber">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Glenn%2C_California_2020.jpg/1024px-Glenn%2C_California_2020.jpg">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img src="favicon.ico" alt="Glenn Logo">
+        <h1>Communtity of Glenn Chamber of Commerce</h1>
+        <h3>555-123-4567<br>glennchamber@fake.net</h3>
+    </header>
+    <button id="hamburger"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a class="navlink" href="#">Discover Glenn</a></li>
+            <li><a class="navlink" href="#">Becoming A Member</a></li>
+            <li><a class="navlink" href="#">Member Direcory</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Glenn%2C_California_2020.jpg/1024px-Glenn%2C_California_2020.jpg"
+                    alt="Glenn's major (and only) intersection">
+            </div>
+            <div id="hero-button">
+                <a href="#">Register Now!</a>
+            </div>
+        </div>
+        <section class="current_events">
+            <h3>Current Events</h3>
+            <p>Nisi laborum labore nulla in dolor nostrud aliqua. Ea voluptate eu velit excepteur pariatur
+                occaecat laboris minim. Eu veniam et consectetur occaecat pariatur ea irure voluptate. Dolore
+                laboris velit ipsum adipisicing consequat consectetur quis minim elit culpa nostrud aliqua.
+                Nostrud aute deserunt nostrud culpa aute dolore incididunt in ipsum proident anim.</p>
+        </section>
+        <section class="current_weather">
+            <h3>Information</h3>
+            <p>Its raining, its pouring, the old man is snoring...</p>
+        </section>
+        <section class="current_spotlight">
+            <h3>Community Spotlights</h3>
+            <ul>
+                <li><a href="">Spotlight 1</a></li>
+                <li><a href="">Spotlight 2</a></li>
+                <li><a href="">Spotlight 3</a></li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>555-123-4567 | glennchamber@fake.net<br>Beau Travis<br>This is a
+            fictitious
+            page for BYU-I WDD 230 | &copy;<span id="year"></span></p>
+        <p>Last Modified:</p>
+        <p id="lastModified">last changed date</p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>
