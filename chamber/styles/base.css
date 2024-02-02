@@ -31,7 +31,8 @@ header {
     width: 100%;
 }
 
-header {
+header,
+#hero {
     border-bottom: 4px solid #ef4062;
 }
 
@@ -98,7 +99,7 @@ header div a img {
 #hamburger.show::before {
     content: "X";
     padding: 0px 0px 0px 11.25px;
-    color: #ef4062;
+    color: #383639;
 }
 
 .navigation {
@@ -135,7 +136,10 @@ header div a img {
 
 #hero-img {
     width: 100%;
-    opacity: .75;
+    opacity: .60;
+    max-height: 500px;
+    object-fit: cover;
+    min-height: max-content;
 }
 
 #hero-box {
@@ -153,7 +157,7 @@ header div a img {
     text-align: center;
     grid-column: 2/3;
     grid-row: 2/3;
-    margin-bottom: 100%;
+    margin-bottom: 50%;
 }
 
 #hero-button a {
@@ -167,7 +171,30 @@ header div a img {
     background-color: #6B9DDA;
 }
 
+/* Content */
+.content {
+    width: 90%;
+    margin: 0 auto;
+}
 
+.current_events,
+.current_weather,
+.current_spotlight {
+    border: 1px solid #383639;
+    border-radius: 5px;
+    margin: 10px;
+    display: grid;
+}
+
+.current_events>h3,
+.current_weather>h3,
+.current_spotlight>h3 {
+    background-color: #6B9DDA;
+    width: 100%;
+    height: 32px;
+    margin: 0%;
+    padding-top: 10px;
+}
 
 /* Footer */
 footer {
