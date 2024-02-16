@@ -57,7 +57,7 @@
     margin: 0 auto;
   }
 
-  main div {
+  .content {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 40%;
