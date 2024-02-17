@@ -6,6 +6,12 @@
         padding-right: 30px;
     }
 
+    header .header_junk {
+        visibility: visible;
+        display: flex;
+        justify-content: flex-end;
+    }
+
     /* Nav */
     #hamburger {
         display: none;
@@ -35,4 +41,13 @@
         grid-column: 1/3;
     }
 
+    /* Footer */
+
+    footer .header_junk {
+        visibility: hidden;
+    }
+
+    footer p {
+        grid-column: 1/3;
+    }
 }

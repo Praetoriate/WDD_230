@@ -26,12 +26,12 @@
             <input type="checkbox" id="clicky_box">
             <span class="slider round"></span>
         </label>
-        <p>Toggle Dark Mode</p>
+        <p>Dark Mode</p>
     </div>
     <header>
 
         <div class="logo_group">
-            <img src="favicon.ico" alt="Glenn Logo">
+            <img src="images/logo.webp" alt="Glenn Logo">
             <h1>Community of Glenn Chamber of Commerce</h1>
         </div>
         <div class="header_junk">
@@ -61,9 +61,14 @@
     <main>
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img"
+                <!-- <img id="hero-img"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Glenn%2C_California_2020.jpg/1024px-Glenn%2C_California_2020.jpg"
-                    alt="Glenn's major (and only) intersection">
+                    alt="Glenn's major (and only) intersection"> -->
+                <picture id="hero-img">
+                    <source media="(max-width: 800px)" srcset="images/wdd230-org-small.webp">
+                    <source media="(max-width: 1200px)" srcset="images/wdd230-org-medium.webp">
+                    <img src="images/wdd230-org-large.webp" alt="People meeting around a table" width="100%">
+                </picture>
             </div>
             <div id="hero-button">
                 <a href="#">Register Now!</a>
@@ -80,6 +85,9 @@
             <section class="current_weather">
                 <h3>Information</h3>
                 <p>Its raining, its pouring, the old man is snoring...</p>
+                <p id="temperature">37</p>
+                <p id="wind-speed">8</p>
+                <p id="wind-chill">*</p>
             </section>
             <section class="current_spotlight">
                 <h3>Community Spotlights</h3>
@@ -93,7 +101,7 @@
     </main>
     <footer>
         <div>
-            <img src="favicon.ico" alt="Glenn Logo">
+            <img src="images/logo.webp" alt="Glenn Logo">
             <p>(555)123-4567 | glennchamber@fake.net<br>Beau Travis - CA, USA</p>
         </div>
         <div>
@@ -101,7 +109,24 @@
             <p id="lastModified">last changed date</p>
         </div>
         <p>This is a fictitious page for BYU-I WDD 230 | &copy;<span id="year"></span></p>
+        <div class="header_junk">
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/x.png" alt="X (aka:Twitter) icon">
+                </a>
+            </div>
+        </div>
     </footer>
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>
 

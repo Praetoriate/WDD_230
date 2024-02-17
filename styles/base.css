@@ -33,6 +33,10 @@ ul {
   vertical-align: middle;
 }
 
+.top_bar {
+  display: inline;
+}
+
 #hamburger {
   font-size: 3rem;
   border: 0px solid rgba(0, 0, 0, .3);
