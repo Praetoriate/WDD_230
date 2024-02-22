@@ -85,9 +85,11 @@
             <section class="current_weather">
                 <h3>Information</h3>
                 <p>Its raining, its pouring, the old man is snoring...</p>
-                <p id="temperature">37</p>
-                <p id="wind-speed">8</p>
-                <p id="wind-chill">*</p>
+                <span><input type="number" id="temperature" placeholder="Temp in °F">°F</span>
+                <!-- <p id="temperature">37</p> -->
+                <span><input type="number" id="wind-speed" placeholder="Wind speed in mph">mph</span>
+                <!-- <p id="wind-speed">8</p> -->
+                <p>Wind Chill: <span id="wind-chill">*</span> °F</p>
             </section>
             <section class="current_spotlight">
                 <h3>Community Spotlights</h3>
@@ -126,6 +128,8 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/dark.js"></script>
+    <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>

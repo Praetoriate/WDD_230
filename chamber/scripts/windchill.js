@@ -1,7 +1,16 @@
 //Calculate Windchill
-const temp = Number(document.querySelector('#temperature').textContent);
-const speed = Number(document.querySelector('#wind-speed').textContent);
+const tempInput = document.querySelector('#temperature');
+const speedInput = document.querySelector('#wind-speed');
+const chillValue = document.querySelector('wind-chill');
 
-const chill = 35.74 + (0.6215 * temp) - (35.75 * (speed**0.16)) + (0.4275 * temp * (speed**0.16));
+function calculateChill() {
+    const temp =parseFloat(tempInput.value);
+    const speed =parseFloat(speedInput.value);
 
-document.querySelector("#wind-chill").textContent = chill.toFixed(2);
+    chill = 35.74 + (0.6215 * temp) - (35.75 * (speed**0.16)) + (0.4275 * temp * (speed**0.16));
+
+    document.querySelector("#wind-chill").textContent = chill.toFixed(2);
+}
+
+tempInput.addEventListener("input", calculateChill);
+speedInput.addEventListener("input", calculateChill);

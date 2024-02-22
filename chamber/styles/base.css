@@ -266,7 +266,9 @@ input:checked+.slider:before {
     border: 1px solid #383639;
     border-radius: 5px;
     margin: 10px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .current_events>h3,
@@ -277,6 +279,13 @@ input:checked+.slider:before {
     height: 32px;
     margin: 0%;
     padding-top: 10px;
+}
+
+#temperature,
+#wind-speed {
+    margin: 3px;
+    width: fit-content;
+    text-align: center;
 }
 
 /* Footer */
