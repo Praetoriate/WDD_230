@@ -1,0 +1,46 @@
+header {
+    display: inline-block;
+    text-align: center;
+    background-color: lightslategray;
+    width: 100%;
+}
+
+header>h1 {
+    text-shadow: 2px 2px 2px darkgrey;
+    font-size: 42px;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    background-color: black;
+}
+
+img {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: black;
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    display: inline-block;
+    text-align: center;
+    background-color: lightslategray;
+    width: 100%;
+}
