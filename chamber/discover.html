@@ -29,7 +29,6 @@
         <p>Dark Mode</p>
     </div>
     <header>
-
         <div class="logo_group">
             <img src="images/logo.webp" alt="Glenn Logo">
             <h1>Community of Glenn Chamber of Commerce</h1>
@@ -53,53 +52,71 @@
         <button id="hamburger" aria-label="Navigation button"></button>
     </header>
     <nav class="navigation">
-        <a class="navlink" href="#">Home</a>
-        <a class="navlink" href="discover.html">Discover Glenn</a>
+        <a class="navlink" href="index.html">Home</a>
+        <a class="navlink" href="#">Discover Glenn</a>
         <a class="navlink" href="#">Becoming A Member</a>
         <a class="navlink" href="#">Member Directory</a>
     </nav>
     <main>
-        <div id="hero">
-            <div id="hero-box">
-                <!-- <img id="hero-img"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Glenn%2C_California_2020.jpg/1024px-Glenn%2C_California_2020.jpg"
-                    alt="Glenn's major (and only) intersection"> -->
-                <picture id="hero-img">
-                    <source media="(max-width: 800px)" srcset="images/wdd230-org-small.webp">
-                    <source media="(max-width: 1200px)" srcset="images/wdd230-org-medium.webp">
-                    <img src="images/wdd230-org-large.webp" alt="People meeting around a table" style="width: 100%;">
-                </picture>
+        <div class="discover-content">
+            <div class="sidebar">
+                <span class="discover-visits"></span>
+                <section class="side-card">
+                    <h3>Community Hisory</h3>
+                    <p>The first post office at Glenn opened in 1903. A. K. Barham owned and operated the Glenn Store
+                        and on November 14, 1913, was appointed postmaster. At that time, the post office was located in
+                        the store. The town had a church, school, several homes and a saloon. Barham's father was a
+                        foreman on one of the wheat ranches of Dr. Hugh J. Glenn in Glenn County. (wikipedia)</p>
+                </section>
+                <section class="side-card">
+                    <h3>Current Events</h3>
+                    <div rel="preconnect" data-cswidget="actionnewsnow_13148157"></div>
+                    <script type="text/javascript" async defer src="//cdn.cityspark.com/wid/get.js"></script>
+                </section>
+                <section class="side-card">
+                    <h3>Upcoming Holidays</h3>
+                    <iframe id="calendar" title="Holiday calendar"
+                        src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=America%2FLos_Angeles&bgcolor=%23ffffff&showTabs=0&showPrint=0&showDate=0&mode=MONTH&showTitle=0&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688"
+                        frameborder="0" scrolling="no" load="lazy"></iframe>
+                </section>
             </div>
-            <div id="hero-button">
-                <a href="#">Register Now!</a>
+            <div class="glenn-photos">
+                <figure>
+                    <img src="images/discover/stony-gorge-dam.webp" alt="Stony Gorge Dam" loading="lazy">
+                    <figcaption>An image of Stony Gorge Dam in Glenn County.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/discover/adult-bald-eagle-looking.webp" alt="Bald eagle looking left"
+                        loading="lazy">
+                    <figcaption>Bald Eagles are prevalent in the late winter / early spring.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/discover/gianella-bridge.webp"
+                        alt="Black and white photo of Gianella Bridge from back in the day" loading="lazy">
+                    <figcaption>The Gianella Bridge was a swing bridge between Glenn County and Butte County.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/discover/willows-post.webp" alt="Historic Willows post office" loading="lazy">
+                    <figcaption>Historic Willows Post Office in the seat of Glenn County.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/discover/birds.webp"
+                        alt="Thousands of snow geese landing and resting in a flooded field" loading="lazy">
+                    <figcaption>Glenn County is an extremely important stopping point for migratory birds, like these
+                        Snow Geese.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/discover/black-butte.webp"
+                        alt="Overhead view of Black Butte Lake and Black Butte Dam" loading="lazy">
+                    <figcaption>Black Butte Lake was formed when the Black Butte Dam was completed in 1963.
+                    </figcaption>
+                </figure>
             </div>
         </div>
-        <div class="content">
-            <section class="current_events">
-                <h3>Current Events</h3>
-                <p>Nisi laborum labore nulla in dolor nostrud aliqua. Ea voluptate eu velit excepteur pariatur
-                    occaecat laboris minim. Eu veniam et consectetur occaecat pariatur ea irure voluptate. Dolore
-                    laboris velit ipsum adipisicing consequat consectetur quis minim elit culpa nostrud aliqua.
-                    Nostrud aute deserunt nostrud culpa aute dolore incididunt in ipsum proident anim.</p>
-            </section>
-            <section class="current_weather">
-                <h3>Information</h3>
-                <p>Its raining, its pouring, the old man is snoring...</p>
-                <span><input type="number" id="temperature" placeholder="Temp in °F">°F</span>
-                <!-- <p id="temperature">37</p> -->
-                <span><input type="number" id="wind-speed" placeholder="Wind speed in mph">mph</span>
-                <!-- <p id="wind-speed">8</p> -->
-                <p>Wind Chill: <span id="wind-chill">*</span> °F</p>
-            </section>
-            <section class="current_spotlight">
-                <h3>Community Spotlights</h3>
-                <ul>
-                    <li><a href="">Spotlight 1</a></li>
-                    <li><a href="">Spotlight 2</a></li>
-                    <li><a href="">Spotlight 3</a></li>
-                </ul>
-            </section>
-        </div>
+
     </main>
     <footer>
         <div>
@@ -130,7 +147,7 @@
     </footer>
     <script src="scripts/dark.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/visits.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>
 
