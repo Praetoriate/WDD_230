@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles/base.css">
+
+<body>
+
+    <h2>Super Simple Form</h2>
+
+    <!-- communication to user -->
+
+    <!-- required - generates error when not filled -->
+    <!-- format of input type -->
+    <!-- display of password type -->
+    <!-- min/max length for entry -->
+
+    <form>
+        <label for="name">Username *:</label><br>
+        <input type="text" id="name" name="name" placeholder="fat fingered fred" autofocus required>
+        <!-- placeholder="fat fingered fred" required -->
+        <br><br>
+
+        <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="phone">Enter your phone number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /><br><br>
+
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd" minlength="8"><br>
+        <span>Minumum 8 characters</span>
+
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <script src="scripts/checker.js"></script>
+</body>
+
+</html>
