@@ -14,6 +14,7 @@ form label form fieldset {
     border: 1px solid var(--blueborder);
     border-radius: 10px;
     padding: .5rem 2%;
+    display: flex;
 }
 
 form legend {
@@ -28,7 +29,7 @@ form div {
     padding-top: 1rem;
     color: #9c2c13;
     font-size: .8rem;
-    text-align: left;
+    text-align: center;
 }
 
 form label.top input,
@@ -43,6 +44,7 @@ form label.top select {
     width: 100%;
     max-width: 20rem;
     background-color: rgba(0, 0, 0, .1);
+    margin: 0 auto;
 }
 
 form label.top input:required {
