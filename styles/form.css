@@ -1,3 +1,9 @@
+:root {
+    --blueborder: #445ba9;
+    --reqcolour: red;
+    --validcolour: green;
+}
+
 main {
     padding: 0 2%;
     min-height: 20rem;
@@ -5,13 +11,13 @@ main {
 
 form label form fieldset {
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: 1px solid var(--blueborder);
     border-radius: 10px;
     padding: .5rem 2%;
 }
 
 form legend {
-    color: #445ba9;
+    color: var(--blueborder);
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -40,11 +46,11 @@ form label.top select {
 }
 
 form label.top input:required {
-    border-left: red solid 6px;
+    border-left: var(--reqcolour) solid 6px;
 }
 
 form label.top input:required:valid {
-    border-left: green solid 6px;
+    border-left: var(--validcolour) solid 6px;
 }
 
 input[type=range] {
