@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beau Travis - Form Page - WDD 230</title>
+    <meta name="author" content="Beau Travis">
+    <meta name="description"
+        content="This is the course assignment portal for Beau Travis in the WDD 230 - Web Frontend Development class.">
+    <meta property="og:title" content="Beau Travis - Form Page - WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://praetoriate.github.io/wdd230/">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Muir_Woods_National_Monument_%2847879029461%29.jpg/1280px-Muir_Woods_National_Monument_%2847879029461%29.jpg">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <img class="inline" src="images/profile_pic.png" alt="Student Photo">
+        <h1 class="inline">Beau Travis</h1>
+    </header>
+    <button id="hamburger">&nbsp;</button>
+    <nav class="navigation">
+        <ul>
+            <li><a class="navlink" href="index.html">Home</a></li>
+            <li><a class="navlink" href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a class="navlink" href="chamber/">Chamber</a></li>
+            <li><a class="navlink" href="form.html">Form</a></li>
+            <li><a class="navlink" href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a class="navlink"
+                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=eng&id=p32-p33#p32"
+                    target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>User Feedback Form</h1>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>User Information</legend>
+                <label class="top">Username*<input type="text" id="fname" name="fname" required></label>
+                <label class="top">Password*<input type="password" id="pwd" name="pwd" minlength="8"
+                        pattern="[a-zA-Z0-9]+" required><span>Minumum 8 characters</span></label>
+                <label class="top">Confirm Password*<input type="password" id="pwd2" name="pwd2" minlength="8"
+                        pattern="[a-zA-Z0-9]+" required></label>
+                <div id="formmessage"></div>
+                <label class="top">Email*<input type="email" id="email" name="email"
+                        title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+                <input class="submitBtn" type="button" id="validateEmail" value="Validate">
+                <div id="emailmessage"></div>
+            </fieldset>
+            <fieldset>
+                <legend>User Feedback</legend>
+                <label class="ranger">Page Rating:<div id="rangevalue">1</div><input type="range" id="r" name="r"
+                        min="1" max="10" value="0" step="1" list="rangevalues"><datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist></label>
+            </fieldset>
+            <input class="submitBtn" type="submit" value="Provide Feedback">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span><br>Beau Travis<br>CA, USA</p>
+        <p id="lastModified">last changed date</p>
+    </footer>
+    <script src="scripts/visits.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/confirm.js"></script>
+</body>
+
+</html>

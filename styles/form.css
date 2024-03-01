@@ -1,0 +1,92 @@
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+form label form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+    text-align: left;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 16px;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+input[type=range] {
+    margin: 1rem;
+    padding: 0.5em;
+}
+
+#r {
+    width: 180px;
+    margin-bottom: 0;
+}
+
+#rangevalue {
+    font-size: 1rem;
+    color: navy;
+    text-align: center;
+}
+
+#rangevalues {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+
+
+form input.submitBtn {
+    border: none;
+    background-color: lightslategray;
+    color: black;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin-top: 4px;
+    max-width: 10rem;
+}
+
+footer {
+    margin-top: 1rem;
+}
