@@ -488,7 +488,7 @@ form textarea {
     margin: 0 auto;
 }
 
-form input.submitBtn {
+form button.submitBtn {
     border: 1px solid #383639;
     background-color: #6B9DDA;
     font-family: "Staatliches";
