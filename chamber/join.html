@@ -53,53 +53,33 @@
         <button id="hamburger" aria-label="Navigation button"></button>
     </header>
     <nav class="navigation">
-        <a class="navlink" href="#">Home</a>
+        <a class="navlink" href="index.html">Home</a>
         <a class="navlink" href="discover.html">Discover Glenn</a>
-        <a class="navlink" href="join.html">Becoming A Member</a>
+        <a class="navlink" href="#">Becoming A Member</a>
         <a class="navlink" href="#">Member Directory</a>
     </nav>
     <main>
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Glenn%2C_California_2020.jpg/1024px-Glenn%2C_California_2020.jpg"
-                    alt="Glenn's major (and only) intersection">
-                <!-- <picture id="hero-img">
-                    <source media="(max-width: 800px)" srcset="images/wdd230-org-small.webp">
-                    <source media="(max-width: 1200px)" srcset="images/wdd230-org-medium.webp">
-                    <img src="images/wdd230-org-large.webp" alt="People meeting around a table" style="width: 100%;">
-                </picture> -->
-            </div>
-            <div id="hero-button">
-                <a href="join.html">Register Now!</a>
-            </div>
-        </div>
-        <div class="content">
-            <section class="current_events">
-                <h3>Current Events</h3>
-                <p>Nisi laborum labore nulla in dolor nostrud aliqua. Ea voluptate eu velit excepteur pariatur
-                    occaecat laboris minim. Eu veniam et consectetur occaecat pariatur ea irure voluptate. Dolore
-                    laboris velit ipsum adipisicing consequat consectetur quis minim elit culpa nostrud aliqua.
-                    Nostrud aute deserunt nostrud culpa aute dolore incididunt in ipsum proident anim.</p>
-            </section>
-            <section class="current_weather">
-                <h3>Information</h3>
-                <p>Its raining, its pouring, the old man is snoring...</p>
-                <span><input type="number" id="temperature" placeholder="Temp in °F">°F</span>
-                <!-- <p id="temperature">37</p> -->
-                <span><input type="number" id="wind-speed" placeholder="Wind speed in mph">mph</span>
-                <!-- <p id="wind-speed">8</p> -->
-                <p>Wind Chill: <span id="wind-chill">*</span> °F</p>
-            </section>
-            <section class="current_spotlight">
-                <h3>Community Spotlights</h3>
-                <ul>
-                    <li><a href="">Spotlight 1</a></li>
-                    <li><a href="">Spotlight 2</a></li>
-                    <li><a href="">Spotlight 3</a></li>
-                </ul>
-            </section>
-        </div>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>User Information</legend>
+                <label class="top">First Name * <input type="text" id="fname" name="fname" required></label>
+                <label class="top">Last Name * <input type="text" id="lname" name="lname" required></label>
+                <label class="top">Job Title / Position * <input type="text" id="job" name="job" minlength="7"
+                        pattern="[a-zA-Z\s-]+" required><span>(minimum 7 characters)</span></label>
+                <label class="top">Business/Org Name * <input type="text" id="bname" name="bname" required></label>
+                <label class="top">Email * <input type="email" id="email" name="email"
+                        placeholder="name@business.com"></label>
+                <label class="top">Mobile Phone # *<input type="tel" id="phone" name="phone"
+                        placeholder="1235551234"></label>
+                <div>Membership Level</div>
+                <label class="sbs"><input type="radio" name="mlevel" value="np"> NP (for non-profit, no fee)</label>
+                <label class="sbs"><input type="radio" name="mlevel" value="bronze"> Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="mlevel" value="silver"> Silver Membership</label>
+                <label class="sbs"><input type="radio" name="mlevel" value="gold"> Gold Membership</label>
+                <label class="top">Business/Org description <textarea id="bdesc" name="bdesc" rows="4" cols="40"
+                        placeholder="Enter a description of your business or organization."></label>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <div>
@@ -128,6 +108,7 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/form.js"></script>
     <script src="scripts/dark.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>
