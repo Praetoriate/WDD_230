@@ -59,29 +59,96 @@
         <a class="navlink" href="#">Member Directory</a>
     </nav>
     <main>
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <legend>User Information</legend>
-                <label class="top">First Name * <input type="text" id="fname" name="fname" required></label>
-                <label class="top">Last Name * <input type="text" id="lname" name="lname" required></label>
-                <label class="top">Job Title / Position * <input type="text" id="job" name="job" minlength="7"
-                        pattern="[a-zA-Z\s-]+" required><span>(minimum 7 characters)</span></label>
-                <label class="top">Business/Org Name * <input type="text" id="bname" name="bname" required></label>
-                <label class="top">Email * <input type="email" id="email" name="email"
-                        placeholder="name@business.com"></label>
-                <label class="top">Mobile Phone # *<input type="tel" id="phone" name="phone"
-                        placeholder="1235551234"></label>
-                <div>Membership Level</div>
-                <label class="sbs"><input type="radio" name="mlevel" value="np"> NP (for non-profit, no fee)</label>
-                <label class="sbs"><input type="radio" name="mlevel" value="bronze"> Bronze Membership</label>
-                <label class="sbs"><input type="radio" name="mlevel" value="silver"> Silver Membership</label>
-                <label class="sbs"><input type="radio" name="mlevel" value="gold"> Gold Membership</label>
-                <label class="top">Business/Org description <textarea id="bdesc" name="bdesc" rows="4" cols="40"
-                        placeholder="Enter a description of your business or organization."></textarea></label>
-                <input type="hidden" id="loadTime" name="loadTime">
-            </fieldset>
-            <input class="submitBtn" type="submit" value="Register">
-        </form>
+        <div class="divContent">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <label class="top">First Name * <input type="text" id="fname" name="fname" required></label>
+                    <label class="top">Last Name * <input type="text" id="lname" name="lname" required></label>
+                    <label class="top">Job Title / Position * <input type="text" id="job" name="job" minlength="7"
+                            pattern="[a-zA-Z\s-]+" required><span> (minimum 7 characters)</span></label>
+
+                    <label class="top">Business/Org Name * <input type="text" id="bname" name="bname" required></label>
+                    <label class="top">Email * <input type="email" id="email" name="email"
+                            placeholder="name@business.com" required></label>
+                    <label class="top">Mobile Phone # * <input type="tel" id="phone" name="phone"
+                            placeholder="1235551234" required></label>
+                    <div class="radioStar">
+                        <div>Membership Level</div>
+                        <label class="sbs"><input type="radio" name="mlevel" value="np"> NP (for non-profit, no
+                            fee)</label>
+                        <label class="sbs"><input type="radio" name="mlevel" value="bronze"> Bronze Membership</label>
+                        <label class="sbs"><input type="radio" name="mlevel" value="silver"> Silver Membership</label>
+                        <label class="sbs"><input type="radio" name="mlevel" value="gold"> Gold Membership</label>
+                    </div>
+                    <label class="top">Business/Org description <textarea id="bdesc" name="bdesc" rows="4" cols="40"
+                            placeholder="Enter a description of your business or organization."></textarea></label>
+                    <input type="hidden" id="loadTime" name="loadTime">
+                    <input class="submitBtn" type="submit" value="Register">
+                </fieldset>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Membership Level</th>
+                        <th>Price</th>
+                        <th>Benefits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NP (Non-Profit)</td>
+                        <td>Free</td>
+                        <td>
+                            <ul>
+                                <li>Basic listing in online directory</li>
+                                <li>Access to member events (discounted rates)</li>
+                                <li>Newsletter subscription</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bronze</td>
+                        <td>$250/year</td>
+                        <td>
+                            <ul>
+                                <li>All NP benefits (listed above)</li>
+                                <li>Featured listing in online directory</li>
+                                <li>5% discount on advertising and sponsorships</li>
+                                <li>Networking opportunities with other members</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Silver</td>
+                        <td>$500/year</td>
+                        <td>
+                            <ul>
+                                <li>All Bronze benefits (listed above)</li>
+                                <li>Priority listing in online directory</li>
+                                <li>10% discount on advertising and sponsorships</li>
+                                <li>Free booth space at one chamber event</li>
+                                <li>Leadership development opportunities</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gold</td>
+                        <td>$1000/year</td>
+                        <td>
+                            <ul>
+                                <li>All Silver benefits (listed above)</li>
+                                <li>Premium listing in online directory (with logo)</li>
+                                <li>15% discount on advertising and sponsorships</li>
+                                <li>Free booth space at two chamber events</li>
+                                <li>Customized marketing and promotion opportunities</li>
+                                <li>Exclusive access to VIP events and workshops</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
     <footer>
         <div>

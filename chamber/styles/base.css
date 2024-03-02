@@ -11,13 +11,15 @@ main {
 
 h1,
 h2,
-h3 {
+h3,
+legend {
     font-family: "Staatliches";
     color: #383639;
 }
 
 p,
-a {
+a,
+label {
     font-family: "Cormorant Garamond";
     color: black;
     font-weight: bold;
@@ -57,6 +59,13 @@ header,
 footer .header_junk {
     display: flex;
     justify-content: center;
+}
+
+footer .header_junk .social {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: center;
 }
 
 header .header_junk {
@@ -395,4 +404,143 @@ footer div img {
 /* ------------ THANK YOU PAGE ------------ */
 .thanks {
     text-align: center;
+}
+
+/*----------- FORM --------------*/
+.divContent {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+legend {
+    padding: .5rem;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 2px solid #878378;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+form label.top,
+form fieldset div {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+form label.top input,
+form label.top select {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    border: solid 1px #878378;
+    border-radius: 4px;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+    margin: 0 auto;
+}
+
+form .radioStar {
+    display: block;
+    border: solid 1px #878378;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #383639;
+    width: 100%;
+    max-width: 20rem;
+    margin-top: 1rem;
+}
+
+form fieldset div {
+    font-family: "Cormorant Garamond";
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px solid #383639;
+    max-width: 20rem;
+    padding-top: 0px;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #383639;
+}
+
+form textarea {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    border: solid 1px #878378;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #383639;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+form input.submitBtn {
+    border: 1px solid #383639;
+    background-color: #6B9DDA;
+    font-family: "Staatliches";
+    color: #383639;
+    font-size: x-large;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 50%;
+    max-width: 10rem;
+    margin-top: .5rem;
+}
+
+form label.top input:required {
+    border-bottom: #ef4062 solid 2px;
+}
+
+/*----------- TABLE --------------*/
+table {
+    border: thin solid #878378;
+    border-collapse: collapse;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+
+
+thead {
+    background-color: #383639;
+    color: #FAFBFC;
+}
+
+th {
+    font-size: larger;
+    font-family: "Staatliches";
+    font-weight: lighter;
+}
+
+td {
+    font-family: "Cormorant Garamond";
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+th,
+td {
+    border: 1px solid #878378;
+    padding: 10px;
+}
+
+tr {
+    height: fit-content;
 }

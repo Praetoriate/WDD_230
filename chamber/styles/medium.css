@@ -64,4 +64,18 @@
     .glenn-photos img:hover {
         filter: contrast(50%);
     }
+
+    /* ------------ JOIN PAGE ------------ */
+
+    .divContent {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    table {
+        margin: 2rem 10px;
+    }
+
+    tbody {
+        max-height: 500px;
+    }
 }
