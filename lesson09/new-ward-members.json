@@ -1,0 +1,24 @@
+{ "moveIns": {
+    "familyName" : "Family1",
+    "moveDate" : "2024-03-05",
+    "numberRecords" : 3,
+"bishopVisit" : true,
+"memberInfo" : [
+    {
+        "memberName" : "Dad Family1",
+        "gender" : "Male",
+        "birth" : "1990-01-02"
+    },
+    {
+        "memberName" : "Mum Family1",
+        "gender" : "Female",
+        "birth" : "1992-03-04"
+    },
+    {
+        "memberName" : "Bebe Family1",
+        "gender" : "Female",
+        "birth" : "2022-05-06"
+    }
+]
+}
+}
