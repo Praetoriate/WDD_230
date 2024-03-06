@@ -1,7 +1,7 @@
 //Dark Mode toggle
 const modeButton = document.querySelector(".slider");
 const body = document.querySelector("body");
-const button = document.getElementById("hero-button");
+const button = document.querySelector("button");
 
 modeButton.addEventListener("click", () => {
 	if (modeButton.textContent.includes(".")) {
