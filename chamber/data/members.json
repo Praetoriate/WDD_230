@@ -1,0 +1,88 @@
+{
+    "members": [
+        {
+            "name": "Glenn Orchard",
+            "address": {
+              "street": "101 Apple Lane",
+              "city": "Glenn",
+              "state": "CA",
+              "zip": "95943"
+            },
+            "phone": "(555) 555-1234",
+            "website": "https://www.glennorchard.com",
+            "image": "images/directory/glenn-orchard-logo.png",
+            "level": "Gold",
+            "founded": "1987"
+          },
+          {
+            "name": "Redwood River Rafts",
+            "address": {
+              "street": "23 Main Street",
+              "city": "Glenn",
+              "state": "CA",
+              "zip": "95943"
+            },
+            "phone": "(555) 555-5556",
+            "website": "https://www.redwoodriverrafts.com",
+            "image": "images/directory/redwood-logo.png",
+            "level": "Silver",
+            "founded": "2015"
+          },
+          {
+            "name": "Sunset Ridge Stables",
+            "address": {
+              "street": "1400 Silverado Road",
+              "city": "Glenn",
+              "state": "CA",
+              "zip": "95943"
+            },
+            "phone": "(555) 555-7890",
+            "website": "https://www.sunsetrridgestables.com",
+            "image": "images/directory/stables-logo.png",
+            "level": "NP",
+            "founded": "2002"
+          },
+          {
+            "name": "Hilltop Honey Farm",
+            "address": {
+              "street": "321 Wildflower Way",
+              "city": "Glenn",
+              "state": "CA",
+              "zip": "95943"
+            },
+            "phone": "(555) 555-4321",
+            "website": "https://www.hilltophoneyfarm.com",
+            "image": "images/directory/honey-logo.png",
+            "level": "Bronze",
+            "founded": "2022"
+          },
+          {
+            "name": "Glenn Mercantile",
+            "address": {
+              "street": "45 Main Street",
+              "city": "Glenn",
+              "state": "CA",
+              "zip": "95943"
+            },
+            "phone": "(555) 555-2468",
+            "website": "https://www.glennmerchants.com",
+            "image": "images/directory/mercantile-logo.png",
+            "level": "Bronze",
+            "founded": "1920"
+          },
+          {
+            "name": "Wildwood Winery",
+            "address": {
+              "street": "1200 Vineyard Lane",
+              "city": "Glenn",
+              "state": "CA",
+              "zip": "95943"
+            },
+            "phone": "(555) 555-0987",
+            "website": "https://www.wildwoodwinery.com",
+            "image": "images/directory/winery-logo.png",
+            "level": "Gold",
+            "founded": "2020"
+          }
+    ]
+}

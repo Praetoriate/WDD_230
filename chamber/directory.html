@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community of Glenn Chamber of Commerce</title>
+    <title>Directory of the Community of Glenn Chamber of Commerce</title>
     <meta name="author" content="Beau Travis">
     <meta name="description"
-        content="Mock chamber of commerce website for the community of Glenn, CA | WDD 230 - Web Frontend Development">
+        content="Mock chamber of commerce website page to view the direcory of the community of Glenn, CA | WDD 230 - Web Frontend Development">
     <meta property="og:title" content="Beau Travis - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://praetoriate.github.io/wdd230/chamber">
@@ -52,16 +52,18 @@
         <button id="hamburger" aria-label="Navigation button"></button>
     </header>
     <nav class="navigation">
-        <a class="navlink" href="index.html">Home</a>
+        <a class="navlink" href="#">Home</a>
         <a class="navlink" href="discover.html">Discover Glenn</a>
         <a class="navlink" href="join.html">Becoming A Member</a>
         <a class="navlink" href="#">Member Directory</a>
     </nav>
     <main>
-        <form method="get" action="thankyou.html">
-            <h1 class="thanks">Thank you for your request!<br>A Chairperson will respond in 83 to 756 business days.
-            </h1>
-        </form>
+        <div class="menu">
+            <button id="grid">▦ Grid</button>
+            <button id="list">▤ List</button>
+        </div>
+        <hr>
+        <div id="members"></div>
     </main>
     <footer>
         <div>
@@ -90,8 +92,10 @@
             </div>
         </div>
     </footer>
+
     <script src="scripts/dark.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/directory.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>
 
