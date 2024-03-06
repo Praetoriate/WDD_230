@@ -363,6 +363,20 @@ footer div img {
     font-weight: normal;
 }
 
+.dark_mode section {
+    background-color: #383639;
+}
+
+.dark_mode section img {
+    background-color: #FAFBFC;
+}
+
+.dark_mode section p,
+.dark_mode section a,
+.dark_mode section h2 {
+    color: #FAFBFC;
+}
+
 /* ------------ DISCOVER PAGE ------------ */
 .sidebar {
     display: flex;
@@ -543,4 +557,50 @@ td {
 
 tr {
     height: fit-content;
+}
+
+/* -------------- DIRECTORY -------------- */
+.menu {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.menu button {
+    padding: 1rem;
+    border: 1px solid #383639;
+    border-radius: 10px;
+    font-family: "Staatliches";
+    color: #383639;
+    font-size: x-large;
+}
+
+#members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    border: 2px solid #383639;
+    box-shadow: 0 0 30px #878378;
+    padding: .5rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    background-color: #FAFBFC;
+}
+
+section img {
+    padding-right: 1rem;
+}
+
+section p {
+    display: block;
+    margin: 0.2rem;
+}
+
+.list section img {
+    display: hidden;
 }

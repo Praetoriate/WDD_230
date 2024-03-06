@@ -15,11 +15,11 @@ const displayMembers = (members) => {
       let entry = document.createElement('section');      
       let logo = document.createElement('img');
       let name = document.createElement('h2');
-      let address = document.createElement('p')
-      let phone = document.createElement('p')      
-      let web = document.createElement('a')
-      let level = document.createElement('p')
-      let founded = document.createElement('p')  
+      let address = document.createElement('p');
+      let phone = document.createElement('p');    
+      let web = document.createElement('a');
+      let level = document.createElement('p');
+      let founded = document.createElement('p');
   
       name.textContent = `${member.name}`;
       address.textContent = `${member.address.street}, ${member.address.city}, ${member.address.state} ${member.address.zip}`;
@@ -44,5 +44,8 @@ const displayMembers = (members) => {
       memberEntry.appendChild(entry);
     });
 }
+
+// Display setting
+
 
    
