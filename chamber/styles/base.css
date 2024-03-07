@@ -597,7 +597,7 @@ tr {
     gap: 1rem;
 }
 
-section {
+#members section {
     border: 2px solid #383639;
     box-shadow: 0 0 30px #878378;
     padding: .5rem;
@@ -613,7 +613,7 @@ section {
     text-align: center;
 }
 
-section p {
+#members section p {
     display: block;
     margin: 0.2rem;
 }
