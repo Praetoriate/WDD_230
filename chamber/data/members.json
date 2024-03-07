@@ -83,6 +83,20 @@
             "image": "images/directory/winery-logo.png",
             "level": "Gold",
             "founded": "2020"
+          },
+          {
+            "name": "Doe's Family Farm",
+            "address": {
+              "street": "123 Farmyard Drive",
+              "city": "Glenn",
+              "state": "CA",
+              "zip": "95943"
+            },
+            "phone": "(530) 555-1234",
+            "website": "https://www.doesfamilyfarm.com",
+            "image": "images/directory/does-farm.png",
+            "level": "NP",
+            "founded": "2005"
           }
     ]
 }
