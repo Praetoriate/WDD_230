@@ -574,6 +574,22 @@ tr {
     font-size: x-large;
 }
 
+.menu #list {
+    background-color: #FAFBFC;
+}
+
+.menu #list.list {
+    background-color: #6B9DDA;
+}
+
+.menu #grid {
+    background-color: #6B9DDA;
+}
+
+.menu #grid.list {
+    background-color: #FAFBFC;
+}
+
 #members {
     margin: 0 auto;
     display: grid;

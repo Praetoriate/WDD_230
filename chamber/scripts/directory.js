@@ -57,9 +57,13 @@ const display = document.querySelector("#members");
 
 listbutton.addEventListener("click", () => {
 	display.classList.add("list");
+    gridbutton.classList.add("list");
+    listbutton.classList.add("list");
 });
 
 gridbutton.addEventListener("click", () => {
 	display.classList.remove("list");
+    gridbutton.classList.remove("list");
+    listbutton.classList.remove("list");
 });
    
