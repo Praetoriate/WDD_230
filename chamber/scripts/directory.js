@@ -14,6 +14,7 @@ const displayMembers = (members) => {
 
       let entry = document.createElement('section');      
       let logo = document.createElement('img');
+      let memberInfo = document.createElement('div')
       let name = document.createElement('h2');
       let address = document.createElement('p');
       let phone = document.createElement('p');    
@@ -29,23 +30,36 @@ const displayMembers = (members) => {
       web.href = `${member.website}`;
       web.textContent = `${member.website}`;
 
+      logo.setAttribute('class', 'member-logo');
       logo.setAttribute('src', member.image);
       logo.setAttribute('alt', `Company logo of ${member.name}`); 
       logo.setAttribute('loading', 'lazy');
       logo.setAttribute('width', '200');
       logo.setAttribute('height', '200');
+
+      memberInfo.setAttribute('class', 'member-info');
   
       entry.appendChild(logo);
-      entry.appendChild(name);
-      entry.appendChild(address);
-      entry.appendChild(phone);
-      entry.appendChild(web);
+      entry.appendChild(memberInfo);
+      memberInfo.appendChild(name);
+      memberInfo.appendChild(address);
+      memberInfo.appendChild(phone);
+      memberInfo.appendChild(web);
   
       memberEntry.appendChild(entry);
     });
 }
 
 // Display setting
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("#members");
 
+listbutton.addEventListener("click", () => {
+	display.classList.add("list");
+});
 
+gridbutton.addEventListener("click", () => {
+	display.classList.remove("list");
+});
    

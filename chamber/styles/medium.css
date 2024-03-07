@@ -66,7 +66,6 @@
     }
 
     /* ------------ JOIN PAGE ------------ */
-
     .divContent {
         grid-template-columns: 1fr 1fr;
     }
@@ -77,5 +76,17 @@
 
     tbody {
         max-height: 500px;
+    }
+
+    /* ------------ DIRECTORY PAGE ------------ */
+    #members.list .member-info {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 180px 180px 120px 1fr;
+        text-align: left;
+    }
+
+    #members.list section {
+        width: 90%;
     }
 }

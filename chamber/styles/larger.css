@@ -9,4 +9,9 @@
     .social a:nth-last-child(-n +2) {
         align-self: center;
     }
+
+    /* ------------ DIRECTORY PAGE ------------ */
+    #members.list .member-info {
+        grid-template-columns: 280px 280px 150px 1fr;
+    }
 }

@@ -575,16 +575,17 @@ tr {
 }
 
 #members {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 }
 
 section {
     border: 2px solid #383639;
     box-shadow: 0 0 30px #878378;
     padding: .5rem;
-    margin: 1rem;
+    margin: 1rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -592,8 +593,8 @@ section {
     background-color: #FAFBFC;
 }
 
-section img {
-    padding-right: 1rem;
+.member-info {
+    text-align: center;
 }
 
 section p {
@@ -601,6 +602,46 @@ section p {
     margin: 0.2rem;
 }
 
-.list section img {
-    display: hidden;
+#members.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#members.list section {
+    border: none;
+    box-shadow: none;
+    flex-direction: row;
+    margin: 0rem;
+}
+
+#members.list .member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#members.list section:nth-child(even) {
+    background-color: #6B9DDA;
+}
+
+#members.list .member h2,
+#members.list .member p,
+#members.list .member a {
+    flex: 1;
+}
+
+#members.list .member-logo {
+    display: none;
+}
+
+#members.list section h2 {
+    margin: .2rem;
+}
+
+.dark_mode #members.list section:nth-child(even) p,
+.dark_mode #members.list section:nth-child(even) h2,
+.dark_mode #members.list section:nth-child(even) a {
+    color: #383639;
 }
