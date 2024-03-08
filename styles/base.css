@@ -130,6 +130,8 @@ main {
 
 li {
   list-style: none;
+  text-align: left;
+  padding-left: .5rem;
 }
 
 .card:first-of-type ul li:nth-child(odd) a {
