@@ -35,11 +35,42 @@
           },
           {
             "url":"https://codepen.io/Beau-Travis/pen/LYajwxP",
-            "title":"CSS Pseudo-elements"
+            "title":"Pseudo-Elements"
           },
           {
             "url":"https://codepen.io/Beau-Travis/pen/PoLKMKm",
             "title":"Le' Hamburger"
+          }
+        ]
+      },
+      {
+        "lesson": "04",
+        "links": [
+          {
+            "url":"https://codepen.io/Beau-Travis/pen/vYPpbMm?editors=1100",
+            "title":"Psuedo-Classes"
+          }
+        ]
+      },
+      {
+        "lesson": "05",
+        "links": [
+          {
+            "url":"lesson05/bom.html",
+            "title":"DOM Manipulation"
+          }
+        ]
+      },
+      {
+        "lesson": "06",
+        "links": [
+          {
+            "url":"lesson06/images/landscape.webp",
+            "title":"WebP"
+          },
+          {
+            "url":"lesson06/responsive-images.html",
+            "title":"Responsive Images"
           }
         ]
       }
