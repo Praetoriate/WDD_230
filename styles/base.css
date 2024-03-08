@@ -141,10 +141,14 @@ li {
   color: navy;
 }
 
-.card:first-of-type ul li:nth-child(even) {
+.card ul li p {
+  display: inline;
+}
+
+/* .card:first-of-type ul li:nth-child(even) {
   list-style: circle;
   list-style-position: inside;
-}
+} */
 
 iframe {
   border: 1px solid lightgrey;
