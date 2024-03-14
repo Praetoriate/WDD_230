@@ -147,6 +147,17 @@ li {
   display: inline;
 }
 
+
+#weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#weather figure {
+  margin: 0px;
+}
+
 /* .card:first-of-type ul li:nth-child(even) {
   list-style: circle;
   list-style-position: inside;
