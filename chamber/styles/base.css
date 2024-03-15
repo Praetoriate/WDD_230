@@ -293,11 +293,14 @@ input:checked+.slider:before {
     text-align: center;
 }
 
-#temperature,
-#wind-speed {
-    margin: 3px;
-    width: fit-content;
-    text-align: center;
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather figure {
+    margin: 0px;
 }
 
 /* Footer */
@@ -616,6 +619,8 @@ tr {
 #members section p {
     display: block;
     margin: 0.2rem;
+    font-size: larger;
+    letter-spacing: 1.5px;
 }
 
 #members.list {

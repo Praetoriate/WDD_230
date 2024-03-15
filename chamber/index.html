@@ -61,11 +61,6 @@
         <div id="hero">
             <div id="hero-box">
                 <img id="hero-img" src="images/glenn.jpg" alt="Glenn's major (and only) intersection">
-                <!-- <picture id="hero-img">
-                    <source media="(max-width: 800px)" srcset="images/wdd230-org-small.webp">
-                    <source media="(max-width: 1200px)" srcset="images/wdd230-org-medium.webp">
-                    <img src="images/wdd230-org-large.webp" alt="People meeting around a table" style="width: 100%;">
-                </picture> -->
             </div>
             <div id="hero-button">
                 <a href="join.html">Register Now!</a>
@@ -80,13 +75,15 @@
                     Nostrud aute deserunt nostrud culpa aute dolore incididunt in ipsum proident anim.</p>
             </section>
             <section class="current_weather">
-                <h3>Information</h3>
-                <p>Its raining, its pouring, the old man is snoring...</p>
-                <span><input type="number" id="temperature" placeholder="Temp in °F">°F</span>
-                <!-- <p id="temperature">37</p> -->
-                <span><input type="number" id="wind-speed" placeholder="Wind speed in mph">mph</span>
-                <!-- <p id="wind-speed">8</p> -->
-                <p>Wind Chill: <span id="wind-chill">*</span> °F</p>
+                <h3>Weather</h3>
+                <div class="weather">
+                    <h3>Current: </h3>
+                    <figure><img id="weather-icon" src="" alt="">
+                    </figure>
+                    <span id="current-temp"></span>
+                    <p>&nbsp;-&nbsp;</p>
+                    <figcaption></figcaption>
+                </div>
             </section>
             <section class="current_spotlight">
                 <h3>Community Spotlights</h3>
@@ -125,9 +122,9 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/dark.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>
 
