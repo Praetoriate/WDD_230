@@ -24,14 +24,14 @@ async function apiFetch() {
         const answer2 = await fetch(forecastUrl);
         if (answer.ok) {
             const data = await answer.json();
-            console.log(data);
+            // console.log(data);
         displayCurrent(data);
         } else {
             throw Error(await answer.text());
         }
         if (answer2.ok) {
             const data2 = await answer2.json();
-            console.log(data2);
+            // console.log(data2);
         displayForecast(data2);
         } else {
             throw Error(await answer2.text());
