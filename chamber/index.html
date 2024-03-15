@@ -66,6 +66,10 @@
                 <a href="join.html">Register Now!</a>
             </div>
         </div>
+        <div id="banner">
+            <h1>Attend our Meat & Greet on Wednesdays @ 7pm in the lodge!</h1>
+            <button id="banner-button" aria-label="Banner hide button"></button>
+        </div>
         <div class="content">
             <section class="current_events">
                 <h3>Current Events</h3>
@@ -75,14 +79,29 @@
                     Nostrud aute deserunt nostrud culpa aute dolore incididunt in ipsum proident anim.</p>
             </section>
             <section class="current_weather">
-                <h3>Weather</h3>
+                <h3>Glenn Weather</h3>
                 <div class="weather">
                     <h3>Current: </h3>
                     <figure><img id="weather-icon" src="" alt="">
                     </figure>
-                    <span id="current-temp"></span>
-                    <p>&nbsp;-&nbsp;</p>
-                    <figcaption></figcaption>
+                    <p><span id="current-temp"></span> ,
+                        <span id="current-phrase"></span>
+                    </p>
+                </div>
+                <div class="weather">
+                    <h3>Tomorrow:&nbsp;&nbsp;</h3>
+                    <p>Min: <span id="min-temp1"></span> - Max: <span id="max-temp1"></span> , <span
+                            id="phrase1"></span></p>
+                </div>
+                <div class="weather">
+                    <h3>The Next Day:&nbsp;&nbsp;</h3>
+                    <p>Min: <span id="min-temp2"></span> - Max: <span id="max-temp2"></span> , <span
+                            id="phrase2"></span></p>
+                </div>
+                <div class="weather">
+                    <h3>And The Next:&nbsp;&nbsp;</h3>
+                    <p>Min: <span id="min-temp3"></span> - Max: <span id="max-temp3"></span> , <span
+                            id="phrase3"></span></p>
                 </div>
             </section>
             <section class="current_spotlight">
@@ -122,6 +141,7 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/banner.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/dark.js"></script>
     <script src="scripts/hamburger.js"></script>
