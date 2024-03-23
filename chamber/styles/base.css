@@ -12,24 +12,27 @@ main {
 h1,
 h2,
 h3,
+h4,
 legend {
     font-family: "Staatliches";
     color: #383639;
+    font-size: x-large;
 }
 
 p,
 a,
 label,
-span {
+span,
+figcaption {
     font-family: "Cormorant Garamond";
     color: black;
     font-weight: bold;
-    font-size: large;
+    font-size: larger;
 }
 
 /* Header */
 .top_bar {
-    background-color: #878378;
+    background-color: #a4a19b;
     width: 100%;
 }
 
@@ -39,10 +42,14 @@ span {
 }
 
 header {
-    background-color: #878378;
+    background-color: #a4a19b;
     display: grid;
     grid-template-columns: auto 1fr;
     width: 100%;
+}
+
+header h1 {
+    font-size: 36px;
 }
 
 header,
@@ -134,11 +141,10 @@ header div a img {
     right: 0;
     bottom: 0;
     background-color: #6B9DDA;
-    -webkit-transition: .4s;
-    transition: .4s;
+    color: transparent;
 }
 
-.slider:before {
+.slider.round:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -146,8 +152,7 @@ header div a img {
     left: 4px;
     bottom: 4px;
     background-color: #FAFBFC;
-    -webkit-transition: .4s;
-    transition: .4s;
+    color: transparent;
 }
 
 input:checked+.slider {
@@ -180,7 +185,7 @@ input:checked+.slider:before {
     font-size: 4rem;
     border: 0px solid black;
     padding: 0px 10px 0px 50px;
-    background-color: #878378;
+    background-color: #a4a19b;
     color: #383639;
     text-align: left;
 }
@@ -275,7 +280,7 @@ input:checked+.slider:before {
     margin: 0 auto;
     margin-top: 10px;
     display: flex;
-    background-color: #878378;
+    background-color: #a4a19b;
     padding: .5rem;
     font-family: "Staatliches";
     border: 2px solid #383639;
@@ -293,7 +298,7 @@ input:checked+.slider:before {
 #banner-button {
     display: inline-flex;
     color: #383639;
-    background-color: #878378;
+    background-color: #a4a19b;
     border: none;
     font-family: "Staatliches";
     font-size: 2rem;
@@ -328,24 +333,47 @@ input:checked+.slider:before {
     text-align: center;
 }
 
+.current_weather {
+    align-items: start;
+}
+
+#weather_sets {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 4;
+}
+
 .weather {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    text-align: left;
+}
+
+.weather h3 {
+    text-align: left;
+    padding-left: 10px;
 }
 
 .weather figure {
-    margin: 0px;
+    margin: 0px 10px;
+    border: 1px solid #878378;
+    border-radius: 20%;
+    background-color: #6B9DDA;
+
 }
 
 /* Footer */
 footer {
-    background-color: #878378;
+    background-color: #a4a19b;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     text-align: center;
     width: 100%;
+    padding: 0px 20px;
 }
 
 footer div:first-child {
@@ -411,14 +439,47 @@ footer div img {
 
 .dark_mode section p,
 .dark_mode section a,
-.dark_mode section h2 {
+.dark_mode section h2,
+.dark_mode legend,
+.dark_mode label,
+.dark_mode label.top input,
+.dark_mode span,
+.dark_mode .sbs,
+.dark_mode #events_content h3,
+.dark_mode .weather h3,
+.dark_mode figcaption,
+.dark_mode .menu p {
     color: #FAFBFC;
+    font-weight: normal;
+}
+
+.dark_mode #members section {
+    background-color: #FAFBFC;
+}
+
+.dark_mode #members section img {
+    background-color: #FAFBFC;
+}
+
+.dark_mode #members section p,
+.dark_mode #members section a,
+.dark_mode #members section h2,
+.dark_mode #spotlight section p,
+.dark_mode #spotlight section a,
+.dark_mode #spotlight section h2 {
+    color: #383639;
+    font-weight: bold;
 }
 
 /* ------------ DISCOVER PAGE ------------ */
 .sidebar {
     display: flex;
     flex-direction: column;
+}
+
+.side-card p {
+    margin: 10px;
+    text-align: justify;
 }
 
 .discover-visits {
@@ -503,6 +564,7 @@ form label.top select {
 
 form .radioStar {
     display: block;
+    text-align: left;
     border: solid 1px #878378;
     border-radius: 4px;
     padding: .75rem;
@@ -587,6 +649,10 @@ tbody tr:nth-child(even) {
     background-color: lightgray;
 }
 
+.dark_mode tbody tr:nth-child(even) {
+    background-color: #383639;
+}
+
 th,
 td {
     border: 1px solid #878378;
@@ -635,7 +701,15 @@ tr {
     gap: 1rem;
 }
 
-#members section {
+#spotlight {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#members section,
+#spotlight section {
     border: 2px solid #383639;
     box-shadow: 0 0 30px #878378;
     padding: .5rem;
@@ -700,4 +774,8 @@ tr {
 .dark_mode #members.list section:nth-child(even) h2,
 .dark_mode #members.list section:nth-child(even) a {
     color: #383639;
+}
+
+.dark_mode .switch span {
+    color: transparent;
 }

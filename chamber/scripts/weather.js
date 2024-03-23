@@ -53,15 +53,15 @@ function displayCurrent(data) {
 }
 
 function displayForecast(data2) {
-    foreMinTemp1.innerHTML = `${data2.DailyForecasts[1].Temperature.Minimum.Value} &deg;F`
+    foreMinTemp1.innerHTML = `${data2.DailyForecasts[1].Temperature.Minimum.Value} `
     foreMaxTemp1.innerHTML = `${data2.DailyForecasts[1].Temperature.Maximum.Value} &deg;F`
     forePhrase1.innerHTML = `${data2.DailyForecasts[1].Day.IconPhrase}`
 
-    foreMinTemp2.innerHTML = `${data2.DailyForecasts[2].Temperature.Minimum.Value} &deg;F`
+    foreMinTemp2.innerHTML = `${data2.DailyForecasts[2].Temperature.Minimum.Value} `
     foreMaxTemp2.innerHTML = `${data2.DailyForecasts[2].Temperature.Maximum.Value} &deg;F`
     forePhrase2.innerHTML = `${data2.DailyForecasts[2].Day.IconPhrase}`
     
-    foreMinTemp3.innerHTML = `${data2.DailyForecasts[3].Temperature.Minimum.Value} &deg;F`
+    foreMinTemp3.innerHTML = `${data2.DailyForecasts[3].Temperature.Minimum.Value} `
     foreMaxTemp3.innerHTML = `${data2.DailyForecasts[3].Temperature.Maximum.Value} &deg;F`
     forePhrase3.innerHTML = `${data2.DailyForecasts[3].Day.IconPhrase}`
 }
