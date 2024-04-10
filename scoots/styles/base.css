@@ -347,6 +347,10 @@ form label.top input:required {
     text-align: center;
 }
 
+.contact-form {
+    align-items: center;
+}
+
 .map-content {
     display: flex;
     flex-direction: column;
