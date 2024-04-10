@@ -39,7 +39,7 @@
         {
           "Name": "Honda Pioneer",
           "Type": "ATV",          
-          "Image": "images/honda-pioneer.jpg",
+          "Image": "images/honda-Pioneer.jpg",
           "Seating": 4,
           "Pricing": {
             "HalfReserve": "$50",
