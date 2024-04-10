@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beau Travis - WDD 230 - Scoots</title>
+    <meta name="author" content="Beau Travis">
+    <meta name="description" content="This is ficitonal website for a Cozumel, Mexico rental company.">
+    <meta property="og:title" content="Beau Travis - WDD 230 - Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://praetoriate.github.io/wdd230/scoots/">
+    <meta property="og:image"
+        content="https://images.pexels.com/photos/1603410/pexels-photo-1603410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo-group">
+                <img src="images/logo.png" alt="Scoots logo of a cute character riding a scooter">
+                <h1>~Scoots~</h1>
+            </div>
+            <nav class="nav-desk">
+                <a class="navlink active" href="index.html">Home</a>
+                <a class="navlink" href="rentals.html">Rentals</a>
+                <a class="navlink" href="reserve.html">Reservations</a>
+                <a class="navlink" href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="reserve.html" class="reserve-button">Reserve Now!</a>
+            <button id="hamburger" aria-label="Navigation button"></button>
+        </div>
+    </header>
+    <nav class="nav-mobile">
+        <a class="navlink active" href="index.html">Home</a>
+        <a class="navlink" href="rentals.html">Rentals</a>
+        <a class="navlink" href="reserve.html">Reservations</a>
+        <a class="navlink" href="contact.html">Contact Us</a>
+    </nav>
+    <div id="banner">
+        <h2>Today's high temperature is <span id="max-temp"></span>!</h2>
+        <button id="banner-button" aria-label="Banner hide button">❌</button>
+    </div>
+    <main>
+
+        <div class="content">
+            <section class="rental-info">
+                <h2>Scoot on Over to Unforgettable Experiences:</h2>
+                <div id="flavour-content">
+                    <p>We believe in making your Cozumel exploration smooth sailing (or should we say, scooting!).
+                        That's why we offer:</p>
+                    <ul>
+                        <li><strong>Scootin' Selection:</strong> Choose from a wide variety of well-maintained scooters,
+                            ATVs, and Jeeps
+                            to match your riding style and adventure plans.</li>
+                        <li><strong>Double the Convenience:</strong> Our two locations make it easy to grab your wheels
+                            and hit the road,
+                            no matter where you are on the island.</li>
+                        <li><strong>Budget-Friendly Fun:</strong> We pride ourselves on offering competitive rates and
+                            transparent
+                            pricing, so you can focus on making memories, not breaking the bank.</li>
+                        <li><strong>Safety First, Always:</strong> Your safety is our priority. All our rentals are
+                            meticulously
+                            maintained and come equipped with the necessary safety gear.</li>
+                        <li><strong>Local Knowledge, Shared with a Smile:</strong> Our friendly and knowledgeable staff
+                            are passionate
+                            about Cozumel and love sharing their local insights and recommendations for hidden gems and
+                            must-see spots.</li>
+                    </ul>
+                    <p>Let Scoots Cozumel be your partner in creating unforgettable adventures on this magical island.
+                        Scoot on over today and get ready to explore Cozumel at your own pace!</p>
+                </div>
+            </section>
+            <div class="content">
+                <section class="rental-info">
+                    <h2>Rentals</h2>
+                    <div id="rental-content">
+                        <h3>Scooters</h3>
+                        <ul>
+                            <li>Honda Metropolitan (49cc) - 1 person</li>
+                            <li>Honda Dio (110cc) - 2 person</li>
+                            <li>Honda PCX150 (149cc) - 2 person</li>
+                        </ul>
+                        <h3>Side-by-side ATV's</h3>
+                        <ul>
+                            <li>Honda Pioneer 1000 - 4 person</li>
+                        </ul>
+                        <h3>Jeep Wrangler 4x4's</h3>
+                        <ul>
+                            <li>4 door - A/C - manual - 5 person</li>
+                            <li>2 door - open air - manual - 4 person</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="weather-info">
+                    <h2>Weather Info</h2>
+                    <div id="weather-content">
+                        <div class="weather">
+                            <div class="weather-stats">
+                                <h3>Current:&nbsp;
+                                </h3>
+                                <figure><img id="current-icon" src="#" alt="#"></figure>
+                            </div>
+                            <p><span id="current-temp"></span><br>
+                                <span id="current-humid"></span><br>
+                                <span id="current-phrase"></span>
+                            </p>
+                            <div class="weather-stats">
+                                <h3>Tomorrow:&nbsp;
+                                </h3>
+                                <figure><img id="future-icon" src="#" alt="#"></figure>
+                            </div>
+                            <p><span id="future-temp"></span><br>
+                                <span id="future-humid"></span><br>
+                                <span id="future-phrase"></span>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <div class="logo-group">
+                <img src="images/logo.png" alt="Scoots logo of a cute character riding a scooter">
+            </div>
+        </div>
+        <div class="footer-section">
+            <p>Scoots@FakeScoots.com<br>+52 998 555 1234</p>
+        </div>
+        <div class="footer-section">
+            <p>Last Modified: - </p>
+            <p id="lastModified">last changed date</p>
+        </div>
+        <div class="footer-section">
+            <a href="attributions.html">Attributions</a>
+            <p>This is a fictitious page for BYU-I WDD 230 | &copy;<span id="year"></span></p>
+        </div>
+        <div class="footer-right">
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/youtube.png" alt="youtube icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/x.png" alt="X (aka:Twitter) icon">
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>

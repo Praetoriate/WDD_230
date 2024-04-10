@@ -1,0 +1,37 @@
+@media screen and (min-width: 800px) {
+
+    #hamburger,
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav-desk {
+        display: inline-block;
+    }
+
+    .navlink:hover {
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    .reserve-button {
+        font-size: 1.1em;
+    }
+
+    /* FOOTER */
+
+    footer {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    form {
+        flex-direction: row;
+    }
+
+    iframe {
+        border: 2px solid grey;
+        width: 550px;
+        height: 450px;
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beau Travis - WDD 230 - Reservations</title>
+    <meta name="author" content="Beau Travis">
+    <meta name="description"
+        content="This is the reservations page of a ficitonal website for a Cozumel, Mexico rental company.">
+    <meta property="og:title" content="Beau Travis - WDD 230 - Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://praetoriate.github.io/wdd230/scoots/">
+    <meta property="og:image"
+        content="https://images.pexels.com/photos/1603410/pexels-photo-1603410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo-group">
+                <img src="images/logo.png" alt="Scoots logo of a cute character riding a scooter">
+                <h1>~Scoots~</h1>
+            </div>
+            <nav class="nav-desk">
+                <a class="navlink" href="index.html">Home</a>
+                <a class="navlink" href="rentals.html">Rentals</a>
+                <a class="navlink active" href="reserve.html">Reservations</a>
+                <a class="navlink" href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="#"><button class="reserve-button">Reserve Now!</button></a>
+            <button id="hamburger" aria-label="Navigation button"></button>
+        </div>
+    </header>
+    <nav class="nav-mobile">
+        <a class="navlink" href="index.html">Home</a>
+        <a class="navlink" href="rentals.html">Rentals</a>
+        <a class="navlink active" href="reserve.html">Reservations</a>
+        <a class="navlink" href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <div class="content reserve-content">
+            <section class="rental-info">
+                <h2>Rental Services and Agreements</h2>
+                <div id="rental-content">
+                    <ul>
+                        <li>A $50 security deposit is required to confirm reservations.</li>
+                        <li>A valid drivers license is required in hand at the time of rental.</li>
+                        <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                        <li>Fuel charge is not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is included.</li>
+                        <li>Damage insurance is available for purchase.</li>
+                        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                        <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                        <li>Rentals may be returned to either physical location.</li>
+                    </ul>
+                </div>
+            </section>
+            <form method="get" action="confirm.html">
+                <fieldset>
+                    <legend>Driver Information</legend>
+                    <label class="top">First Name *<br><input type="text" id="fname" name="fname" required></label>
+                    <label class="top">Last Name *<br><input type="text" id="lname" name="lname" required></label>
+                    <label class="top">Country of Origin *<br><input type="text" id="country" name="country"
+                            required></label>
+                    <label class="top">Cruise Line<br><input type="text" id="cruise" name="cruise"></label>
+                    <label class="top">Email *<br><input type="email" id="email" name="email"
+                            placeholder="name@site.com" required></label>
+                    <label class="top">Phone # *<br><input type="tel" id="phone" name="phone" placeholder="1235551234"
+                            required></label>
+                    <label class="top">Comments:<br><textarea id="bdesc" name="bdesc" rows="4" cols="40"
+                            placeholder="Please enter any needed accomodations or special requests."></textarea></label>
+                    <input type="hidden" id="loadTime" name="loadTime">
+                </fieldset>
+                <fieldset>
+                    <legend>Reservation Information</legend>
+                    <label class="top">Pickup Date *<br><input type="date" id="sdate" name="sdate" required></label>
+                    <label class="top">Dropoff Date *<br><input type="date" id="edate" name="edate" required></label>
+                    <label class="top">Vehicle Preferrence *<br><input list="vlist" id="vpref" name="vpref" required
+                            placeholder="Please select a vehicle">
+                        <datalist id="vlist">
+                            <option value="Surprise me!">
+                            <option value="Scooter: Honda Metro (seats 1)">
+                            <option value="Scooter: Honda Dio (seats 2)">
+                            <option value="Scooter: Honda PCX150 (seats 2)">
+                            <option value="ATV: Honda Pioneer (seats 4)">
+                            <option value="Jeep: Wrangler - 4 door w/ A/C (seats 5)">
+                            <option value="Jeep: Wrangler - 2 door open-top (seats 4)">
+                        </datalist></label>
+                    <label class="top">Pickup Location *<br><input list="plist" id="ppref" name="ppref" required
+                            placeholder="Please select a location">
+                        <datalist id="plist">
+                            <option value="Playa del Carmen">
+                            <option value="Terminal Puerta Maya">
+                        </datalist></label>
+                    <label class="top">Dropoff Location *<br><input list="plist" id="dpref" name="dpref" required
+                            placeholder="Please select a location"></label>
+                    <label class="top">Group size *<br><input type="number" id="party" name="party" required></label>
+                    <button class="submitBtn" type="submit">Reserve Your Adventure!</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <div class="logo-group">
+                <img src="images/logo.png" alt="Scoots logo of a cute character riding a scooter">
+            </div>
+        </div>
+        <div class="footer-section">
+            <p>Scoots@FakeScoots.com<br>+52 998 555 1234</p>
+        </div>
+        <div class="footer-section">
+            <p>Last Modified: - </p>
+            <p id="lastModified">last changed date</p>
+        </div>
+        <div class="footer-section">
+            <a href="attributions.html">Attributions</a>
+            <p>This is a fictitious page for BYU-I WDD 230 | &copy;<span id="year"></span></p>
+        </div>
+        <div class="footer-right">
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/youtube.png" alt="youtube icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/x.png" alt="X (aka:Twitter) icon">
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>

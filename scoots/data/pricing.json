@@ -1,0 +1,76 @@
+{
+    "Rentals": [
+        {
+          "Name": "Honda Metro",
+          "Type": "Scooter",
+          "Image": "images/honda-metro.jpg",
+          "Seating": 1,
+          "Pricing": {
+            "HalfReserve": "$20",
+            "FullReserve": "$30",
+            "HalfWalk": "$25",
+            "FullWalk": "$35"
+          }
+        },
+        {
+          "Name": "Honda Dio",
+          "Type": "Scooter",          
+          "Image": "images/honda-dio.jpg",
+          "Seating": 2,
+          "Pricing": {
+            "HalfReserve": "$30",
+            "FullReserve": "$40",
+            "HalfWalk": "$35",
+            "FullWalk": "$45"
+          }
+        },
+        {
+          "Name": "Honda PCX150",
+          "Type": "Scooter",          
+          "Image": "images/honda-pcx.jpg",
+          "Seating": 2,
+          "Pricing": {
+            "HalfReserve": "$40",
+            "FullReserve": "$50",
+            "HalfWalk": "$45",
+            "FullWalk": "$55"
+          }
+        },
+        {
+          "Name": "Honda Pioneer",
+          "Type": "ATV",          
+          "Image": "images/honda-pioneer.jpg",
+          "Seating": 4,
+          "Pricing": {
+            "HalfReserve": "$50",
+            "FullReserve": "$70",
+            "HalfWalk": "$60",
+            "FullWalk": "$80"
+          }
+        },
+        {
+          "Name": "Wrangler 4 Door",
+          "Type": "Jeep",          
+          "Image": "images/4door.jpg",
+          "Seating": 5,
+          "Pricing": {
+            "HalfReserve": "$70",
+            "FullReserve": "$100",
+            "HalfWalk": "$85",
+            "FullWalk": "$125"
+          }
+        },
+        {
+          "Name": "Wrangler 2 Door",
+          "Type": "Jeep",          
+          "Image": "images/2door.jpg",
+          "Seating": 4,
+          "Pricing": {
+            "HalfReserve": "$60",
+            "FullReserve": "$85",
+            "HalfWalk": "$70",
+            "FullWalk": "$90"
+          }
+        }
+    ]
+}

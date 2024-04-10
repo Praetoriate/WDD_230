@@ -2,8 +2,8 @@
     "familyName" : "Family1",
     "moveDate" : "2024-03-05",
     "numberRecords" : 3,
-"bishopVisit" : true,
-"memberInfo" : [
+    "bishopVisit" : true,
+    "memberInfo" : [
     {
         "memberName" : "Dad Family1",
         "gender" : "Male",
